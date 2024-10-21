@@ -3,7 +3,7 @@
 /* Color Scheme Variables */
 :root {
     /* Base Colors */
-    --background-color: ##00030d; /* Black */
+    --background-color: #00030d; /* Black */
     --text-color: #f5f4f0; /* White */
     --link-color: #487CA5; /* Blue */
     --link-hover-color: #CC782F; /* Orange */
