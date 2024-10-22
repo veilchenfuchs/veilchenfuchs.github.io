@@ -9,16 +9,16 @@
     --link-hover-color: #CC782F; /* Orange */
     --button-background: #8A67AB; /* Purple */
     --button-hover-background: #487CA5; /* Blue */
-    --highlight-personal-bg: #F6F3F8; /* Light Purple */
-    --highlight-personal-text: #8A67AB; /* Purple */
-    --highlight-hobby-bg: #FAECEC; /* Light Red */
-    --highlight-hobby-text: #C4554D; /* Red */
-    --highlight-other-bg: #E9F3F7; /* Light Blue */
-    --highlight-other-text: #487CA5; /* Blue */
+    --highlight-personal-bg: #332244; /* Dark Purple */
+    --highlight-personal-text: #f5e6ff; /* Light Purple Text */
+    --highlight-hobby-bg: #441f1f; /* Dark Red */
+    --highlight-hobby-text: #f8cccc; /* Light Red Text */
+    --highlight-other-bg: #1e3b46; /* Dark Blue */
+    --highlight-other-text: #d5ecf4; /* Light Blue Text */
     --cursor-color: rgba(72, 124, 165, 0.7); /* Blue with opacity */
     --cursor-active-color: rgba(72, 124, 165, 0.9); /* Brighter Blue */
     --border-color: #CC782F; /* Orange */
-    --footer-background: ##00030d; /* Black */
+    --footer-background: #00030d; /* Black */
     --footer-text-color: #f5f4f0; /* White */
     --footer-border-color: #CC782F; /* Orange */
 }
