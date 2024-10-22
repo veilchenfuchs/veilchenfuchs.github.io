@@ -192,7 +192,7 @@ a:hover::after {
 }
 
 .project1 { 
-    background-color: var(--highlight-personal-text); /* Purple */
+    background-color: var(--highlight-personal-bg); /* Purple */
     width: 45%;
     color: ##00030d; /* Black text */
 }
