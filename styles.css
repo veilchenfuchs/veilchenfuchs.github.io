@@ -194,25 +194,25 @@ a:hover::after {
 .project1 { 
     background-color: var(--highlight-personal-bg); /* Purple */
     width: 45%;
-    color: ##00030d; /* Black text */
+    color: #00030d; /* Black text */
 }
 
 .project2 { 
     background-color: var(--link-color); /* Blue */
     width: 50%;
-    color: ##00030d; /* Black text */
+    color: #00030d; /* Black text */
 }
 
 .project3 { 
     background-color: #CC782F; /* Orange */
     width: 55%;
-    color: ##00030d; /* Black text */
+    color: #00030d; /* Black text */
 }
 
 .project4 { 
     background-color: #C4554D; /* Red */
     width: 40%; 
-    color: ##00030d; /* Black text */
+    color: #00030d; /* Black text */
 }
 
 /* Responsive Design */
@@ -255,7 +255,7 @@ button, input {
 
 button:hover, input:hover {
     background-color: var(--button-background); /* Purple */
-    color: ##00030d; /* Black text */
+    color: #00030d; /* Black text */
 }
 
 .fade {
@@ -445,7 +445,7 @@ button:hover, input:hover {
 /* Footer Styles */
 footer {
     background-color: #CC782F; /* Standout footer background color */
-    color: ##00030d; /* Black text color */
+    color: #00030d; /* Black text color */
     text-align: center;
     padding: 8px 0; /* Padding for footer */
     position: relative; /* Allows proper positioning */
@@ -463,7 +463,7 @@ footer {
 }
 
 .social-links a {
-    color: ##00030d; /* Black color for links */
+    color: #00030d; /* Black color for links */
     text-decoration: none; /* Remove underline */
     margin: 0 10px; /* Margin between links */
 }
