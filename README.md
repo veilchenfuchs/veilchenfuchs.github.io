@@ -1,4 +1,4 @@
 # Violet Tran
 My personal website
-[veilchenfuchs.github.io
+[violettran.tech
 ](url)
