@@ -1,66 +1,56 @@
 function updateTime() {
     const now = new Date();
-    const options = { timeZone: "America/New_York", hour: "2-digit", minute: "2-digit", hour12: false };
-    document.getElementById("time-box").innerText = new Intl.DateTimeFormat("en-US", options).format(now) + " EST";
+    const options = { 
+        timeZone: "America/New_York", 
+        hour: "2-digit", 
+        minute: "2-digit", 
+        second: "2-digit"
+    };
+    const timeString = new Intl.DateTimeFormat("en-US", options).format(now);
+    document.getElementById("time-display").textContent = timeString;
 }
+
+// Update time every second
 setInterval(updateTime, 1000);
 updateTime();
 
-function submitForm() {
-    let email = document.getElementById('email').value;
-    let message = document.getElementById('message').value;
+document.addEventListener("DOMContentLoaded", () => {
+    // Custom Cursor
+    const cursor = document.createElement("div");
+    cursor.classList.add("custom-cursor");
+    document.body.appendChild(cursor);
 
-    if (!email || !message) {
-        alert("Please fill in all fields.");
-        return;
-    }
-
-    alert(`Message sent!\nEmail: ${email}\nMessage: ${message}`);
-    document.getElementById('email').value = "";
-    document.getElementById('message').value = "";
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".top-bar a");
-
-    function highlightSection() {
-        let currentSection = "";
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            if (window.scrollY >= sectionTop) {
-                currentSection = section.getAttribute("id");
-            }
-        });
-
-        navLinks.forEach(link => {
-            link.classList.remove("active");
-            if (link.getAttribute("href").substring(1) === currentSection) {
-                link.classList.add("active");
-            }
-        });
-    }
-
-    function revealOnScroll() {
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            if (sectionTop < window.innerHeight - 50) {
-                section.classList.add("visible");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", () => {
-        highlightSection();
-        revealOnScroll();
+    document.addEventListener("mousemove", (e) => {
+        cursor.style.top = `${e.clientY}px`;
+        cursor.style.left = `${e.clientX}px`;
     });
 
-    revealOnScroll(); // Trigger on load
-});
+    document.querySelectorAll("a, .box").forEach((el) => {
+        el.addEventListener("mouseenter", () => cursor.classList.add("large"));
+        el.addEventListener("mouseleave", () => cursor.classList.remove("large"));
+    });
 
-document.addEventListener("mousemove", (e) => {
-    const cursor = document.getElementById("cursor");
-    cursor.style.top = `${e.clientY}px`;
-    cursor.style.left = `${e.clientX}px`;
+    // Page Load Animation
+    document.querySelector(".container").classList.add("visible");
+
+    // Different Time Update Intervals for Boxes
+    function updateTimeForBox(boxId, interval) {
+        function update() {
+            const now = new Date();
+            const options = { 
+                timeZone: "America/New_York", 
+                hour: "2-digit", 
+                minute: "2-digit", 
+                second: "2-digit"
+            };
+            const timeString = new Intl.DateTimeFormat("en-US", options).format(now);
+            document.getElementById(boxId).textContent = timeString;
+        }
+        update();
+        setInterval(update, interval);
+    }
+
+    updateTimeForBox("time-display", 1000);  // Updates every second
+    updateTimeForBox("random-box-1", 2000);  // Updates every 2 seconds
+    updateTimeForBox("random-box-2", 3000);  // Updates every 3 seconds
 });
