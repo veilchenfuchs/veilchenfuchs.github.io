@@ -1,85 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Violet Tran Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="topbar">
-        <div class="name">Violet Tran - Home</div>
-        <div class="role">Student and Developer</div>
-    </div>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Violet Tran | Student and Developer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <meta name="description" content="Portfolio of Violet Tran, a high school student and developer based in NYC. Explore projects, collaborations, and ways to connect.">
+    <meta name="keywords" content="Violet Tran, Developer, Portfolio, NYC, Programming, JavaScript, SQL, Technology">
+    <meta name="author" content="Violet Tran">
 
-    <header class="header">
-        <div class="logo">V</div>
-        <div>
-            <div class="main-title">Hallo, I'm Violet Tran</div>
-            <div class="subheading">NYC Based Student and Developer</div>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Violet Tran Portfolio">
+    <meta property="og:description" content="Explore the portfolio of Violet Tran, NYC-based student and developer. Connect, collaborate, and discover exciting projects.">
+    <meta property="og:image" content="images/header.svg">
+    <meta property="og:url" content="https://www.violettran.tech">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Violet Tran Portfolio">
+    <meta name="twitter:description" content="Explore the portfolio of Violet Tran, NYC-based student and developer. Connect, collaborate, and discover exciting projects.">
+    <meta name="twitter:image" content="images/header.svg">
+
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="top-bar">
+        <div class="role">Violet Tran</div>
+        <div class="role">
+            <a href="#about-me">About Me</a> ·
+            <a href="#my-work">My Work</a> ·
+            <a href="#contact-me">Contact Me</a>
         </div>
-    </header>
+    </div>
+    
+    <div class="header">
+        <img src="./images/header.svg" alt="Violet Tran Logo" class="header-image">
 
-    <div class="content">
-      <p class="description">
-          I'm a high school student and passionate developer currently studying at 
-          <a href="https://en.wikipedia.org/wiki/Stuyvesant_High_School" class="link">Stuyvesant High School</a> in New York City. 
-          As someone deeply engaged in the world of technology, I work on a variety of projects that expand my programming knowledge, particularly in JavaScript and SQL. 
-          I love working on creative and challenging tasks that push my limits, whether it's building websites, coding innovative bots, or diving into new areas like game design and tech for social change. My ultimate goal is to create meaningful solutions that have a positive impact. 
-          If you're interested in collaborating or simply want to connect, don't hesitate to reach out through any of the following platforms: 
-          <a href="https://github.com/veilchenfuchs" class="link">GitHub</a>, 
-          <a href="mailto:violettran@gmail.com" class="link">Email</a>, 
-          <a href="https://discord.com/users/veilchenfuchs" class="link">Discord</a>, 
-          <a href="https://orcid.org/0009-0001-9501-934X" class="link">ORCID</a>, or donate at
-          <a href="https://ko-fi.com/veilchenfuchs" class="link">Ko-fi</a>. 
-          I’m always open to new ideas and excited to see where collaboration can take us.
-      </p>
-  </div>
-  
+        <div class="social-links">
+            <a href="https://github.com/veilchenfuchs" target="_blank">
+                <img src="./images/resume-icon.svg" alt="Resume">
+            </a>
+            <a href="mailto:laviolettran@gmail.com" target="_blank">
+                <img src="./images/email-icon.svg" alt="Email">
+            </a>
+            <a href="https://github.com/veilchenfuchs" target="_blank">
+                <img src="./images/github-icon.svg" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/violet-tran-28231b334/" target="_blank">
+                <img src="./images/linkedin-icon.svg" alt="Linkedin">
+            </a>
+        </div>
 
-    <section class="projects">
-        <a href="https://www.violettran.tech/natsim" class="project">
-            <img src="images/natsim.png" alt="Project Image">
-            <span>The NatSim Bot</span>
-        </a>
-        <a href="https://www.violettran.tech/maps" class="project">
-            <img src="images/maps.png" alt="Project Image">
-            <span>Arechian Maps</span>
-        </a>
-        <a href="https://www.violettran.tech/makeyourchange" class="project">
-            <img src="images/makeyourchange.png" alt="Project Image">
-            <span>Make Your Change</span>
-        </a>
-        <a href="https://www.violettran.tech/portfolio" class="project">
-            <img src="images/portfolio.png" alt="Project Image">
-            <span>VioletTran.tech</span>
-        </a>
-        <a href="https://www.violettran.tech/osc" class="project">
-            <img src="images/osc.png" alt="Project Image">
-            <span>Open Source Contributions</span>
-        </a>
-        <a href="https://www.violettran.tech/natsim" class="project">
-            <img src="images/artapp.png" alt="Project Image">
-            <span>Art Appreciation Work</span>
-        </a>
-      </section>
-
-      <footer class="footer">
-          <div class="footer-content">
-              <p>© 2024 Violet Tran. All Rights Reserved.</p>
-              <p>
-                  Follow me on 
-                  <a href="https://github.com/veilchenfuchs" class="link">GitHub</a>, 
-                  <a href="https://discord.com/users/veilchenfuchs" class="link">Discord</a>, or 
-                  <a href="https://ko-fi.com/veilchenfuchs" class="link">Ko-fi</a>.
-              </p>
-          </div>
-      </footer>
-  
-      <script src="script.js"></script>
-  </body>
-  </html>
-
+    </div>
+    
+    <div id="about-me" class="about-me">
+        <div class="about-me-container">
+            <div class="about-me-text">
+                <h2>About Me -</h2>
+                <p>I'm a student and developer currently studying at Stuyvesant High School in NYC. I'm currently working on a variety of projects that expand my programming knowledge and I love working on creative and challenging tasks that push my limits while having a meaningful impact.</p>
+            </div>
+            <div class="about-me-image">
+                <div class="profile-frame">
+                    <div class="online-indicator"></div>
+                    <img src="./images/pfp.png" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="my-work" class="my-work">
+        <div class="my-work-container">
+            <div class="work-gallery">
+                <a href="#" class="work-item">
+                    <img src="./images/natsim.png" alt="Project 1">
+                </a>
+                <a href="#" class="work-item">
+                    <img src="./images/maps.png" alt="Project 2">
+                </a>
+                <a href="#" class="work-item">
+                    <img src="./images/makeyourchange.png" alt="Project 3">
+                </a>
+                <a href="#" class="work-item">
+                    <img src="./images/osc.png" alt="Project 4">
+                </a>
+            </div>
+    
+            <div class="my-work-text">
+                <h2>My Work -</h2>
+                <p>Check out some of my latest work! While I'm still learning, I've been working on numerous projects across many platforms and would love to hear your thoughts!</p>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="contact-me" class="contact-me">
+        <h2>Contact Me -</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-box" id="time-box">UTC-05:00</div>
+                <div class="contact-box">CS @ STUY</div>
+                <div class="contact-box">Built With:<br>HTML, CSS,<br>and JS</div>
+            </div>
+            <div class="contact-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Your Email">
+                <label for="message">Message</label>
+                <textarea id="message" placeholder="Your Message"></textarea>
+                <button onclick="submitForm()">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-left">
+            <h2>Violet!</h2>
+            <p>
+                <img src="./images/email-icon.svg" alt="Email Icon"> laviolettran@gmail.com
+            </p>
+            <p>
+                <img src="./images/phone-icon.svg" alt="Phone Icon"> (+1) 347-844-1953
+            </p>
+        </div>
+        <div class="footer-right">
+            <a href="https://github.com/veilchenfuchs" target="_blank">
+                <img src="./images/github-icon.svg" alt="GitHub Icon">
+            </a>
+            <a href="https://instagram.com/veilchenfuchs" target="_blank">
+                <img src="./images/instagram-icon.svg" alt="Instagram Icon">
+            </a>
+            <a href="https://www.linkedin.com/in/violet-tran-28231b334/" target="_blank">
+                <img src="./images/linkedin-icon.svg" alt="Linkedin Icon">
+            </a>
+        </div>
+    </footer>
+    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
