@@ -1,13 +1,7 @@
 function updateTime() {
     const now = new Date();
-    const options = { 
-        timeZone: "America/New_York", 
-        hour: "2-digit", 
-        minute: "2-digit", 
-        second: "2-digit"
-    };
-    const timeString = new Intl.DateTimeFormat("en-US", options).format(now);
-    document.getElementById("time-display").textContent = timeString;
+    const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    document.getElementById('time-display').textContent = timeString;
 }
 
 // Update time every second
@@ -34,23 +28,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".container").classList.add("visible");
 
     // Different Time Update Intervals for Boxes
-    function updateTimeForBox(boxId, interval) {
+    function updateTime(boxId, interval) {
         function update() {
             const now = new Date();
-            const options = { 
-                timeZone: "America/New_York", 
-                hour: "2-digit", 
-                minute: "2-digit", 
-                second: "2-digit"
-            };
-            const timeString = new Intl.DateTimeFormat("en-US", options).format(now);
+            const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
             document.getElementById(boxId).textContent = timeString;
         }
         update();
         setInterval(update, interval);
     }
 
-    updateTimeForBox("time-display", 1000);  // Updates every second
-    updateTimeForBox("random-box-1", 2000);  // Updates every 2 seconds
-    updateTimeForBox("random-box-2", 3000);  // Updates every 3 seconds
+    updateTime("time-display", 1000);  // Updates every second
+    updateTime("random-box-1", 2000);  // Updates every 2 seconds
+    updateTime("random-box-2", 3000);  // Updates every 3 seconds
 });
