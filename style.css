@@ -1,15 +1,16 @@
 :root {
-  --accent-color: #3a66ad;
-  --background-color: #fafff9;
-  --text-color: #000000;
-  --gray-color: #868686;
+  --accent-color: #D23030;
+  --background-color: #d5dbe0;
+  --text-color: #061827;
+  --gray-color: #a0a9b1;
+  --border-color: #081825;
 }
 
 body {
     margin: 0 auto; 
     max-width: 850px;
     font-family: Arial, sans-serif;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 1.2em;
     color: var(--text-color);
     background: var(--background-color);
@@ -20,6 +21,20 @@ body {
 a {
   color: var(--accent-color);
   text-decoration: none;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 2em;
+}
+
+h2{
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: var(--accent-color);
+    font-size: 1.5em;
 }
 
 .top-bar {
@@ -42,7 +57,7 @@ a {
 }
 
 .main-info {
-    border: 4px solid var(--text-color);
+    border: 4px solid var(--border-color);
     padding: 10px;
     display: flex;            
     gap: 20px;              
@@ -52,7 +67,7 @@ a {
 .picture img {
     width: 260px;
     height: auto;
-    border: 4px solid var(--text-color);
+    border: 4px solid var(--border-color);
 }
 
 .info-stuff {
@@ -79,7 +94,7 @@ a {
 }
 
 .posts {
-    border: 4px solid var(--text-color);
+    border: 4px solid var(--border-color);
     border-top: 0px;
     padding: 10px;
 }
